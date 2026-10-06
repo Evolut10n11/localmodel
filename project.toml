@@ -1,0 +1,35 @@
+# All paths are relative to this file. No API keys belong in this file.
+[project]
+workdir = "workspace/elaine"
+dance = "workspace/input/dance.mp4"
+music = "workspace/input/music.mp3"
+seconds = 12.0
+dance_start = 0.0
+music_start = 0.0
+width = 720
+height = 1280
+fps = 30
+seed = 42
+
+[character]
+# A starting design, not an approved final identity. Edit before the first generation.
+prompt = """
+Photorealistic original fictional adult woman, age 25, full body head to shoes,
+shoulder-length chestnut hair, green eyes, natural skin texture, warm confident expression.
+Plain cream fitted T-shirt, blue straight jeans, white sneakers. Natural adult proportions.
+Standing facing the camera, hands visible and apart from the body, feet fully in frame.
+Soft diffused studio light, simple pastel background, vertical fashion photography.
+One person only, no text, no logos, no resemblance to a specific real person.
+"""
+
+[[looks]]
+id = "pink"
+prompt = "Contemporary anime-inspired fashion: dusty pink pleated midi skirt, cream top, dark brown cardigan, small pink hair ribbon, white shoes. Soft mint studio background. Fully clothed adult fashion look."
+
+[[looks]]
+id = "yellow"
+prompt = "Contemporary anime-inspired fashion: yellow cardigan with subtle triangle details, warm orange pleated skirt, white high-top sneakers. Lavender studio background. Fully clothed adult fashion look."
+
+[[looks]]
+id = "blue"
+prompt = "Contemporary anime-inspired fashion: taupe faux-fur cropped jacket, navy skirt, opaque dark tights, black boots. Pale blue studio background. Fully clothed adult fashion look."

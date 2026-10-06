@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "localmodel"
+version = "0.1.0"
+description = "AI character dance videos with code-driven editing"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = ["imageio-ffmpeg==0.6.0", "numpy>=1.26,<3", "librosa==0.11.0"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8,<10"]
+
+[project.scripts]
+localmodel = "localmodel.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["localmodel*"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
