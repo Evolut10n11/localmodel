@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+
+# Local environments and credentials
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+
+# Private media, generated files, models and tools
+workspace/
+outputs/
+runs/
+.cache/
+.tools/
+*.mp4
+*.mov
+*.webm
+*.wav
+*.mp3
+*.safetensors
+*.ckpt
+*.pt
+*.onnx
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
